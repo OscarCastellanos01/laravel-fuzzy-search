@@ -24,9 +24,6 @@ Este paquete proporciona un componente Blade reutilizable que actúa como un `<s
 ```bash
 composer require castellanos/laravel-fuzzy-search
 ```
-Resultado:
-
-→ `resources/js/vendor/fuzzySearch.js`
 
 2. Instala la dependencia JavaScript en tu proyecto Laravel:
 
@@ -40,6 +37,10 @@ npm install fuse.js
 php artisan vendor:publish --tag=fuzzy-js
 ```
 
+Resultado:
+
+→ `resources/js/vendor/fuzzySearch.js`
+
 4. Importa el archivo JS en tu archivo `resources/js/app.js`:
 
 ```javascript
@@ -52,7 +53,7 @@ import './vendor/fuzzySearch';
 npm run dev
 ```
 
-6. Layout:
+6. Importar CSS/SCSS, JS:
 ```bash
 @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 ```
